@@ -57,10 +57,11 @@ Main
 .form_play {
     display: flex;
     justify-content: space-evenly;
+    margin: 1.2rem 0 1rem 0;
 }
 
 #play {
-    margin-top: 0;
+    margin: 0;
 }
 
 #pc-number,
