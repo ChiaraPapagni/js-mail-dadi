@@ -10,21 +10,19 @@ const message = document.getElementById('message');
 //creo una lista di chi può accedere
 const permissionList = ['chiara', 'email', 'myEmail'];
 
+
 //al click controllo email
 sendButtonElement.addEventListener('click', function () {
-
-    const email = emailInputElement.value;
 
     //scorro l'array
     for (let index = 0; index < permissionList.length; index++) {
 
         //controllo che sia nella lista di chi può accedere
-        if (email == permissionList[index]) {
+        if (emailInputElement.value == permissionList[index]) {
             message.innerHTML = "Puoi accedere";
-            return;
+            break;
         } else {
             message.innerHTML = "Non puoi accedere";
-            return;
         }
 
     }
