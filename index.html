@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mail</title>
+    <title>Mail - Gioco dei dadi</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
     <main id="site_main" class="container">
@@ -14,17 +16,37 @@
             <label for="user-email">Inserisci la tua email</label>
             <input type="email" name="email" id="email">
 
-             <div class="btn_form">
-            <button id="send">Invia</button>
-                    <button id="cancel">Annulla</button>
-                </div>   
+            <div class="btn_form">
+                <button id="send">Invia</button>
+                <button id="cancel">Annulla</button>
+            </div>
 
             <h2 id="message"></h2>
         </div>
         <!-- /.form -->
+
+        <div class="form">
+            <button id="play">Genera numero casuale</button>
+            <div class="form_play">
+                <div class="user">
+                    <p>Giocatore</p>
+                    <p id="user-number"></p>
+                </div>
+                <div class="computer">
+                    <p>Computer</p>
+                    <p id="pc-number"></p>
+                </div>
+            </div>
+            <!-- /.form_play -->
+
+            <h2 id="winner"></h2>
+        </div>
+        <!-- /.form -->
+
     </main>
     <!-- /#site_main -->
-    
+
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
