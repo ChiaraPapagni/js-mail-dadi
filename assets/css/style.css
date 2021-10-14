@@ -29,6 +29,7 @@ button {
     cursor: pointer;
     background-color: rgb(144, 166, 212);
     color: #FFF;
+    margin: 1rem 0;
 }
 
 button:hover {
@@ -45,6 +46,7 @@ Main
 
 .form {
     width: 50%;
+    height: 220px;
     margin: auto;
     padding: 2rem;
     border-radius: 10px;
